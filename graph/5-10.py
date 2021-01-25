@@ -34,3 +34,5 @@ for i in range(n):
             result += 1
 
 print(result)
+
+# 결론 : 모든 좌표에 대해 DFS를 수행하는것.
