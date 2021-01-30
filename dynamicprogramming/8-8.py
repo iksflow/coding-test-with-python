@@ -13,7 +13,7 @@ for i in range(n):
 # 한번 계산한 결과를 저장하기 위해 DP테이블을 정의한다
 d = [10001] * (m + 1)
 d[0] = 0
-for x in range(n):
+for i in range(n):
     for j in range(array[i], m + 1):
         if d[j - array[i]] != 10001:
             d[j] = min(d[j], d[j - array[i]] + 1)
