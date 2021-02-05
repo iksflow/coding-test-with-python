@@ -54,3 +54,4 @@ for d in distance:
 
 # 시작 노드는 제외해야 하므로 count - 1을 출력
 print(count - 1, max_distance)
+
