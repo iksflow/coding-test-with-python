@@ -32,12 +32,9 @@ for i in range(e):
 
 # 각 원소가 속한 집합 출력
 print('각 원소가 속한 집합: ', end = '')
-
-
 for i in range(1, v + 1):
     print(find_parent(parent, i), end=' ')
 
-#
 print()
 
 # 부모 테이블 내용 출력
