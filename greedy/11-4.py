@@ -2,6 +2,8 @@
 
 n = int(input())
 data = list(map(int, input().split()))
+
+# 작은 동전부터 처리하도록 정렬
 data.sort()
 
 target = 1
