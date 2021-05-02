@@ -7,7 +7,7 @@ print('n=', n, ', array=', array)
 
 # 풀이 아이디어 : 가장 공포도가 작은 모험가들부터 그룹을 지어 보낸다.
 
-# 오름차순 정
+# 오름차순 정렬
 array.sort()
 
 print('array after=', array)
@@ -16,16 +16,15 @@ print('array after=', array)
 count = 0
 
 # 공포도
-fear = -1;
+member = 0;
 
-for i in n:
-    if fear == -1:
-        fear = array[i]
-    elif fear == 0:
-        fear = array[i]
-        count = count + 1
-
-    fear = fear - 1
+for i in array:
+    member += 1
+    if member < i:
+        continue
+    else:
+        member = 0
+        count += 1
 
 print("maked group =", count)
 
